@@ -97,13 +97,54 @@ BP_teamC/
 
 ---
 
-## 기여 방법
+## 기여 방법 (브랜치 → main 병합)
 
-1. 이 저장소를 clone 합니다.
-2. `retrospectives/{본인 이름}/` 또는 `application-plans/{본인 이름}/` 아래에 Markdown(`.md`)으로 작성합니다.
-3. 변경 사항을 commit 후 push 합니다. (팀에서 사용하는 브랜치·PR 규칙이 있으면 그에 따릅니다.)
+문서 수정은 **`main`에 직접 push하지 않고**, **본인 이름 브랜치**에서 작업한 뒤 **`main`으로 merge**하는 방식을 사용합니다. 서로의 작업이 겹치지 않도록 하기 위함입니다.
 
-**커밋 메시지 예시**
+### 브랜치 이름 규칙
+
+- 형식: `{이름}` (예: `윤지호`, `이민준`, `이수진`)
+- 한 사람당 하나의 작업 브랜치를 쓰거나, 회고·계획을 나누고 싶다면 `{이름}/회고`, `{이름}/현업계획`처럼 붙여도 됩니다.
+
+### 작업 순서
+
+1. 저장소를 clone 하고 최신 `main`을 받습니다.
+
+```bash
+git clone https://github.com/yoonwlgh/BP_teamC.git
+cd BP_teamC
+git pull origin main
+```
+
+2. 본인 브랜치를 만들고 이동합니다.
+
+```bash
+git checkout -b 윤지호
+```
+
+3. `retrospectives/{본인 이름}/` 또는 `application-plans/{본인 이름}/` 아래 문서를 수정·작성합니다.
+
+4. commit 후 **본인 브랜치**를 push 합니다.
+
+```bash
+git add .
+git commit -m "docs: 윤지호 Cursor 교육 회고 (2026-05-29)"
+git push -u origin 윤지호
+```
+
+5. GitHub에서 **Pull Request**를 열어 `main` ← `{본인 브랜치}` 로 merge 합니다.  
+   (로컬에서 merge하는 경우: `main`으로 checkout → `git merge 윤지호` → `git push origin main`)
+
+```bash
+git checkout main
+git pull origin main
+git merge 윤지호
+git push origin main
+```
+
+6. merge가 끝나면 필요 시 본인 브랜치를 삭제하거나, 다음 수정 때 같은 브랜치에서 `main`을 다시 pull 받고 이어서 작업합니다.
+
+### 커밋 메시지 예시
 
 - `docs: 윤지호 Cursor 교육 회고 (2026-05-29)`
 - `docs: 이민준 현업 적용 계획 초안`
