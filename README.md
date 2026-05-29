@@ -25,6 +25,7 @@ Cursor 응용과정을 수료한 **C팀** 멤버들이 **회고록**과 **현업
 | 18 | 이승환 | sh.cat.lee@gmail.com |
 | 19 | 이영실 | youngsillee35@gmail.com |
 | 20 | 이재호 | amalanchi@gmail.com |
+| 21 | 이진범 | jbjbljb@gmail.com |
 
 ---
 
@@ -43,6 +44,7 @@ BP_teamC/
 │   ├── 이승환/
 │   ├── 이영실/
 │   └── 이재호/
+|   └── 이진범/
 └── application-plans/
     ├── _templates/
     │   └── 현업적용계획-템플릿.md
@@ -52,6 +54,7 @@ BP_teamC/
     ├── 이승환/plan.md
     ├── 이영실/plan.md
     └── 이재호/plan.md
+    └── 이진범/plan.md
 ```
 
 추가 회고는 `retrospectives/{본인 이름}/YYYY-MM-DD.md` 로 새 파일을 만들면 됩니다.
@@ -68,6 +71,7 @@ BP_teamC/
 | 이승환 | [retrospectives/이승환/2026-05-29.md](retrospectives/이승환/2026-05-29.md) | [application-plans/이승환/plan.md](application-plans/이승환/plan.md) |
 | 이영실 | [retrospectives/이영실/2026-05-29.md](retrospectives/이영실/2026-05-29.md) | [application-plans/이영실/plan.md](application-plans/이영실/plan.md) |
 | 이재호 | [retrospectives/이재호/2026-05-29.md](retrospectives/이재호/2026-05-29.md) | [application-plans/이재호/plan.md](application-plans/이재호/plan.md) |
+| 이진범 | [retrospectives/이진범/2026-05-29.md](retrospectives/이진범/2026-05-29.md) | [application-plans/이진범/plan.md](application-plans/이진범/plan.md) |
 
 공통 템플릿: [회고록-템플릿](retrospectives/_templates/회고록-템플릿.md) · [현업적용계획-템플릿](application-plans/_templates/현업적용계획-템플릿.md)
 
